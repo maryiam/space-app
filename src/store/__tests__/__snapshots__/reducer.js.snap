@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`store/reducer #destination reduces a destination/FIND/FAILURE action 1`] = `
+Object {
+  "list": Array [],
+  "loading": false,
+}
+`;
+
+exports[`store/reducer #destination reduces a destination/FIND/SUCCESS action 1`] = `
+Object {
+  "list": Array [
+    Object {
+      "currencies": Array [
+        0,
+        1,
+      ],
+      "id": 0,
+      "name": "test 1",
+    },
+    Object {
+      "currencies": Array [
+        2,
+      ],
+      "id": 1,
+      "name": "test 2",
+    },
+  ],
+  "loading": false,
+}
+`;
+
+exports[`store/reducer #destination reduces a destination/SET_SEARCH action 1`] = `
+Object {
+  "list": Array [],
+  "loading": true,
+  "search": "Co",
+}
+`;
+
+exports[`store/reducer #destination reduces an unknown action 1`] = `
+Object {
+  "list": Array [],
+}
+`;
+
+exports[`store/reducer #order reduces a order/RESET_DESTINATION action 1`] = `
+Object {
+  "destination": null,
+}
+`;
+
+exports[`store/reducer #order reduces a order/SET_DESTINATION action 1`] = `
+Object {
+  "destination": 0,
+}
+`;
+
+exports[`store/reducer #order reduces a order/SET_PAYMENT action 1`] = `
+Object {
+  "payment": 0,
+}
+`;
+
+exports[`store/reducer #order reduces a order/SUBMIT action 1`] = `
+Object {
+  "departing": true,
+}
+`;
+
+exports[`store/reducer #order reduces an unknown action 1`] = `Object {}`;
+
+exports[`store/reducer #payment reduces a payment/FIND/FAILURE action 1`] = `
+Object {
+  "found": Array [],
+  "list": Array [],
+  "loading": false,
+}
+`;
+
+exports[`store/reducer #payment reduces a payment/FIND/REQUEST action 1`] = `
+Object {
+  "list": Array [],
+  "loading": true,
+}
+`;
+
+exports[`store/reducer #payment reduces a payment/FIND/SUCCESS action 1`] = `
+Object {
+  "found": Array [
+    0,
+    1,
+  ],
+  "list": Array [
+    Object {
+      "id": 0,
+      "name": "test 1",
+    },
+    Object {
+      "id": 1,
+      "name": "test 2",
+    },
+  ],
+  "loading": false,
+}
+`;
+
+exports[`store/reducer #payment reduces an unknown action 1`] = `
+Object {
+  "list": Array [],
+}
+`;

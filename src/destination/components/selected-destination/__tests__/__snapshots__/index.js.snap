@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selected-destination/ #render renders correctly with default props 1`] = `
+<div
+  className="sc-bdVaJa iHKLJG"
+>
+  <img
+    className="sc-bwzfXH bXuwR"
+    src={null}
+  />
+  <div
+    className="sc-htpNat eJgCND"
+  >
+    <h2
+      className="sc-bxivhb bUZGRr"
+    >
+      unknown
+    </h2>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Climate: 
+      N/A
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Gravity: 
+      N/A
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Population: 
+      N/A
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Price: 
+      N/A
+    </span>
+  </div>
+</div>
+`;
+
+exports[`selected-destination/ #render renders correctly with selected destination data 1`] = `
+<div
+  className="sc-bdVaJa iHKLJG"
+>
+  <img
+    className="sc-bwzfXH bXuwR"
+    src="/assets/planets/thumb/yavin4@x2.png"
+  />
+  <div
+    className="sc-htpNat eJgCND"
+  >
+    <h2
+      className="sc-bxivhb bUZGRr"
+    >
+      toto
+    </h2>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Climate: 
+      tropical
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Gravity: 
+      1 standard
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Population: 
+      100
+    </span>
+    <span
+      className="sc-ifAKCX cFlEyZ"
+    >
+      Price: 
+      45
+    </span>
+  </div>
+</div>
+`;

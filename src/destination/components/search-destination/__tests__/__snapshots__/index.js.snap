@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search-destination/ #render renders correctly with provided props 1`] = `
+<input
+  className="sc-bdVaJa bYooEG"
+  onChange={[Function]}
+  placeholder="Search for a planet"
+  type="text"
+/>
+`;

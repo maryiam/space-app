@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`store/actions #resetDestination creates the correct action of resetting the selected destination 1`] = `
+Object {
+  "type": "order/RESET_DESTINATION",
+}
+`;
+
+exports[`store/actions #setDestination creates the correct action of setting the selected destination 1`] = `
+Object {
+  "destinationId": 10,
+  "type": "order/SET_DESTINATION",
+}
+`;
+
+exports[`store/actions #setPayment creates the correct action 1`] = `
+Object {
+  "paymentId": 0,
+  "type": "order/SET_PAYMENT",
+}
+`;
+
+exports[`store/actions #setSearch creates the correct action of searching destinations 1`] = `
+Object {
+  "searchCriteria": "Co",
+  "type": "destination/SET_SEARCH",
+}
+`;
+
+exports[`store/actions #startTrip creates the correct action 1`] = `
+Object {
+  "type": "order/SUBMIT",
+}
+`;

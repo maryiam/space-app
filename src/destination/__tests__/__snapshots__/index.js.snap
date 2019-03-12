@@ -1,0 +1,502 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`destination/ #render renders correctly when loading 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #8a8894;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c1 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c1:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::placeholder {
+  color: #8a8894;
+}
+
+<section
+  className="c0"
+>
+  <input
+    className="c1"
+    onChange={[Function]}
+    placeholder="Search for a planet"
+    type="text"
+  />
+  <span
+    className="c2"
+  >
+    Loading...
+  </span>
+</section>
+`;
+
+exports[`destination/ #render renders correctly with a selected destination 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c1:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::placeholder {
+  color: #8a8894;
+}
+
+.c2 {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c3 {
+  margin: 2rem 0 0 -7rem;
+  opacity: 0.5;
+  height: 250px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 5rem;
+}
+
+@media (min-width:40rem) {
+  .c2 {
+    margin: 2rem 1rem 2rem 8rem;
+  }
+}
+
+@media (min-width:40rem) {
+  .c3 {
+    margin: 0;
+    height: 220px;
+    opacity: 1;
+  }
+}
+
+@media (min-width:40rem) {
+  .c4 {
+    position: relative;
+    margin: 0 1rem;
+  }
+}
+
+<section
+  className="c0"
+>
+  <input
+    className="c1"
+    onChange={[Function]}
+    placeholder="Search for a planet"
+    type="text"
+  />
+  <div
+    className="c2"
+  >
+    <img
+      className="c3"
+      src={null}
+    />
+    <div
+      className="c4"
+    >
+      <h2
+        className=""
+      >
+        destination 1
+      </h2>
+      <span
+        className=""
+      >
+        Climate: 
+        N/A
+      </span>
+      <span
+        className=""
+      >
+        Gravity: 
+        N/A
+      </span>
+      <span
+        className=""
+      >
+        Population: 
+        N/A
+      </span>
+      <span
+        className=""
+      >
+        Price: 
+        N/A
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`destination/ #render renders correctly with destinations available 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.c4 {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.c3 {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.c1 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c1:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::placeholder {
+  color: #8a8894;
+}
+
+<section
+  className="c0"
+>
+  <input
+    className="c1"
+    onChange={[Function]}
+    placeholder="Search for a planet"
+    type="text"
+  />
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <img
+      className="c3"
+      src={null}
+    />
+    <span
+      className="c4"
+    >
+      destination 1
+    </span>
+  </div>
+  <div
+    className="c2"
+    onClick={[Function]}
+  >
+    <img
+      className="c3"
+      src={null}
+    />
+    <span
+      className="c4"
+    >
+      destination 2
+    </span>
+  </div>
+</section>
+`;
+
+exports[`destination/ #render renders correctly with no information 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #8a8894;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c1 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c1:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::placeholder {
+  color: #8a8894;
+}
+
+<section
+  className="c0"
+>
+  <input
+    className="c1"
+    onChange={[Function]}
+    placeholder="Search for a planet"
+    type="text"
+  />
+  <span
+    className="c2"
+  >
+    Please select a planet
+  </span>
+</section>
+`;
+
+exports[`destination/ #render renders correctly with no matching destinations 1`] = `
+.c0 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c2 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #8a8894;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c1 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c1:focus {
+  outline: none;
+}
+
+.c1::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c1:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c1::placeholder {
+  color: #8a8894;
+}
+
+<section
+  className="c0"
+>
+  <input
+    className="c1"
+    onChange={[Function]}
+    placeholder="Search for a planet"
+    type="text"
+  />
+  <span
+    className="c2"
+  >
+    No matching planet was found
+  </span>
+</section>
+`;

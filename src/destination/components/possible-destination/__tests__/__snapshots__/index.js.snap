@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`possible-destination/ #render renders correctly with default props 1`] = `
+<div
+  className="sc-bdVaJa isJPnW"
+  onClick={[Function]}
+>
+  <img
+    className="sc-htpNat iVofcY"
+    src={null}
+  />
+  <span
+    className="sc-bwzfXH kwcotr"
+  >
+    unknown
+  </span>
+</div>
+`;
+
+exports[`possible-destination/ #render renders correctly with provided destination data 1`] = `
+<div
+  className="sc-bdVaJa isJPnW"
+  onClick={[Function]}
+>
+  <img
+    className="sc-htpNat iVofcY"
+    src="/assets/planets/thumb/yavin4@x2.png"
+  />
+  <span
+    className="sc-bwzfXH kwcotr"
+  >
+    destination 1
+  </span>
+</div>
+`;

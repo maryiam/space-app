@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "Imperial Credit",
+    "symbol": "IȻ",
+    "rate": 1  
+  },
+  {
+    "id": 1,
+    "name": "Republic Credit",
+    "symbol": "RȻ",
+    "rate": 1.1
+  },
+  {
+    "id": 2,
+    "name": "Wupiupi",
+    "symbol": "Ϣ",
+    "rate": 0.5
+  },
+  {
+    "id": 3,
+    "name": "Druggat",
+    "symbol": "Ð",
+    "rate": 1.5
+  }
+]

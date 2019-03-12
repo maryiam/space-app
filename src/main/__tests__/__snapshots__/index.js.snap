@@ -1,0 +1,217 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main #render renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #fff;
+  font-family: 'Viga',sans-serif;
+  overflow: hidden;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.95,0.05,0.795,0.035);
+  animation-timing-function: cubic-bezier(0.95,0.05,0.795,0.035);
+}
+
+.c1 {
+  font-family: 'Passion One',sans-serif;
+  color: #ffe818;
+  word-spacing: 100vw;
+  text-align: center;
+  font-size: 3em;
+  line-height: 0.85;
+  text-transform: uppercase;
+  -moz-text-fill-color: #06031c;
+  -webkit-text-fill-color: #06031c;
+  -moz-text-stroke-color: #ffe818;
+  -webkit-text-stroke-color: #ffe818;
+  -moz-text-stroke-width: 2px;
+  -webkit-text-stroke-width: 2px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 18rem;
+}
+
+.c6 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c7 {
+  font-family: 'Passion One',sans-serif;
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.c8 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #8a8894;
+  margin-bottom: 1rem;
+}
+
+.c3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c5 {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #8a8894;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.c4 {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ffe818;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  font-family: 'Viga',sans-serif;
+}
+
+.c4:focus {
+  outline: none;
+}
+
+.c4::-webkit-input-placeholder {
+  color: #8a8894;
+}
+
+.c4::-moz-placeholder {
+  color: #8a8894;
+}
+
+.c4:-ms-input-placeholder {
+  color: #8a8894;
+}
+
+.c4::placeholder {
+  color: #8a8894;
+}
+
+@media (min-width:40rem) {
+  .c2 {
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .c2 > * {
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+
+  .c2 > * + * {
+    margin-left: 2rem;
+  }
+}
+
+<main
+  className="c0"
+>
+  <h1
+    className="c1"
+    title="Pilote Privé"
+  >
+    Pilote Privé
+  </h1>
+  <section
+    className="c2"
+  >
+    <section
+      className="c3"
+    >
+      <input
+        className="c4"
+        onChange={[Function]}
+        placeholder="Search for a planet"
+        type="text"
+      />
+      <span
+        className="c5"
+      >
+        Please select a planet
+      </span>
+    </section>
+    <section
+      className="c6"
+    >
+      <h2
+        className="c7"
+      >
+        Payment Mean
+      </h2>
+      <span
+        className="c8"
+      >
+        Select a destination to view available currencies
+      </span>
+    </section>
+  </section>
+</main>
+`;

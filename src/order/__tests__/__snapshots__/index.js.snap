@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`order/ #render renders correctly 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c1 {
+  color: #fff;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.c2 {
+  margin-left: 0.5rem;
+  font-size: 1.5em;
+  color: #ffe818;
+}
+
+.c3 {
+  background: transparent;
+  border: 2px solid #ffe818;
+  padding: 1rem 2rem;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #ffe818;
+  font-family: 'Passion One',sans-serif;
+}
+
+<section
+  className="c0"
+>
+  <div
+    className="c1"
+  >
+    Price:
+     
+    <span
+      className="c2"
+    >
+      120
+       
+      $
+    </span>
+  </div>
+  <button
+    className="c3"
+    onClick={[Function]}
+  >
+    let's go
+  </button>
+</section>
+`;
