@@ -8,16 +8,16 @@ import { startTrip } from '../store/actions';
 import { Price, PriceValue, Button, Wrapper } from './styled-components';
 
 const mapStateToProps = state => ({
-  order: getOrder(state),
+  order: getOrder(state)
 });
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
-      startTrip,
+      startTrip
     },
     dispatch
-  ),
+  )
 });
 
 export const OrderRecap = ({ order, actions }) => {

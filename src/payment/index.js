@@ -11,16 +11,16 @@ import PaymentOption from './components/payment-option';
 
 const mapStateToProps = state => ({
   currencies: getAvailableCurrencies(state),
-  loading: isPaymentLoading(state),
+  loading: isPaymentLoading(state)
 });
 
 const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(
     {
-      setPayment,
+      setPayment
     },
     dispatch
-  ),
+  )
 });
 
 export class SelectPayment extends Component {
@@ -37,7 +37,10 @@ export class SelectPayment extends Component {
     const { loading, currencies } = this.props;
 
     if (loading) return <InfoText>Loading...</InfoText>;
-    if (!currencies) return <InfoText>Select a destination to view available currencies</InfoText>;
+    if (!currencies)
+      return (
+        <InfoText>Select a destination to view available currencies</InfoText>
+      );
     if (currencies.length === 0)
       return <InfoText>No currency available for this destination</InfoText>;
     return currencies.map(currency => (

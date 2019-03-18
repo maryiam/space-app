@@ -9,7 +9,7 @@ export function* onDestinationSet({ destinationId }) {
 
   yield put({
     type: a.FIND_PAYMENT.REQUEST,
-    currencies,
+    currencies
   });
 }
 
@@ -18,17 +18,17 @@ export function* findPayment({ currencies = [] }) {
     const list = yield call(paymentService.find, currencies);
     yield put({
       type: a.FIND_PAYMENT.SUCCESS,
-      list,
+      list
     });
   } catch (e) {
     yield put({
       type: a.FIND_PAYMENT.FAILURE,
-      error: e.message,
+      error: e.message
     });
   }
 }
 
 export default all([
   takeLatest(a.SET_DESTINATION, onDestinationSet),
-  takeLatest(a.FIND_PAYMENT.REQUEST, findPayment),
+  takeLatest(a.FIND_PAYMENT.REQUEST, findPayment)
 ]);

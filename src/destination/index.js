@@ -9,7 +9,7 @@ import {
   getFoundDestinations,
   isDestinationLoading,
   getSelectedDestination,
-  getSearchKeyword,
+  getSearchKeyword
 } from '../store/selectors';
 import PossibleDestination from './components/possible-destination';
 import SearchDestination from './components/search-destination';
@@ -19,7 +19,7 @@ const mapStateToProps = state => ({
   matchingDestinations: getFoundDestinations(state),
   destination: getSelectedDestination(state),
   loading: isDestinationLoading(state),
-  search: getSearchKeyword(state),
+  search: getSearchKeyword(state)
 });
 
 const mapDispatchToProps = dispatch => ({
@@ -27,10 +27,10 @@ const mapDispatchToProps = dispatch => ({
     {
       setSearch,
       setDestination,
-      resetDestination,
+      resetDestination
     },
     dispatch
-  ),
+  )
 });
 
 export class SelectDestination extends Component {

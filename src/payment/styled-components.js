@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {styledTextBox} from '../main/styled-components';
+import { styledTextBox } from '../main/styled-components';
 
 export const ContentWrapper = styled.section`
   width: 100%;

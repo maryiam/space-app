@@ -8,7 +8,7 @@ const SelectedDestination = ({
   climate = 'N/A',
   gravity = 'N/A',
   population = 'N/A',
-  price = 'N/A',
+  price = 'N/A'
 }) => (
   <Content>
     <Image src={img} />

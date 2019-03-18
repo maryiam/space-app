@@ -1,17 +1,19 @@
 import React from 'react';
 import 'jest-styled-components';
 import renderer from 'react-test-renderer';
-import {SelectDestination} from '../index';
+import { SelectDestination } from '../index';
 
 describe('destination/', () => {
   describe('#render', () => {
     it('renders correctly with no information', () => {
-      const tree = renderer.create(<SelectDestination actions={{}}/>);
+      const tree = renderer.create(<SelectDestination actions={{}} />);
       expect(tree.toJSON()).toMatchSnapshot();
     });
 
     it('renders correctly when loading', () => {
-      const tree = renderer.create(<SelectDestination loading={true} actions={{}}/>);
+      const tree = renderer.create(
+        <SelectDestination loading={true} actions={{}} />
+      );
       expect(tree.toJSON()).toMatchSnapshot();
     });
 
@@ -20,8 +22,8 @@ describe('destination/', () => {
         <SelectDestination
           search={'abc'}
           matchingDestinations={[
-            {id: 0, name: 'destination 1', currencies: [0, 1]},
-            {id: 1, name: 'destination 2', currencies: [2]},
+            { id: 0, name: 'destination 1', currencies: [0, 1] },
+            { id: 1, name: 'destination 2', currencies: [2] }
           ]}
           actions={{}}
         />
@@ -31,7 +33,11 @@ describe('destination/', () => {
 
     it('renders correctly with no matching destinations', () => {
       const tree = renderer.create(
-        <SelectDestination search={'abc'} matchingDestinations={[]} actions={{}}/>
+        <SelectDestination
+          search={'abc'}
+          matchingDestinations={[]}
+          actions={{}}
+        />
       );
       expect(tree.toJSON()).toMatchSnapshot();
     });
@@ -41,10 +47,10 @@ describe('destination/', () => {
         <SelectDestination
           search={'abc'}
           matchingDestinations={[
-            {id: 0, name: 'destination 1', currencies: [0, 1]},
-            {id: 1, name: 'destination 2', currencies: [2]},
+            { id: 0, name: 'destination 1', currencies: [0, 1] },
+            { id: 1, name: 'destination 2', currencies: [2] }
           ]}
-          destination={{id: 0, name: 'destination 1', currencies: [0, 1]}}
+          destination={{ id: 0, name: 'destination 1', currencies: [0, 1] }}
           actions={{}}
         />
       );
@@ -59,17 +65,19 @@ describe('destination/', () => {
         <SelectDestination
           search={'abc'}
           matchingDestinations={[
-            {id: 0, name: 'destination 1', currencies: [0, 1]},
-            {id: 1, name: 'destination 2', currencies: [2]},
+            { id: 0, name: 'destination 1', currencies: [0, 1] },
+            { id: 1, name: 'destination 2', currencies: [2] }
           ]}
           actions={{
-            setDestination: mockFn,
+            setDestination: mockFn
           }}
         />
       );
 
       const rootInstance = tree.root;
-      const destinations = rootInstance.findAll(element => element.type === 'div');
+      const destinations = rootInstance.findAll(
+        element => element.type === 'div'
+      );
 
       destinations[0].props.onClick();
       expect(mockFn).toBeCalled();
@@ -82,7 +90,7 @@ describe('destination/', () => {
         <SelectDestination
           actions={{
             resetDestination: resetActionMock,
-            setSearch: searchActionMock,
+            setSearch: searchActionMock
           }}
         />
       );
@@ -91,7 +99,7 @@ describe('destination/', () => {
       const input = rootInstance.findByType('input');
       const value = 'testing';
 
-      input.props.onChange({target: {value}});
+      input.props.onChange({ target: { value } });
       expect(resetActionMock).toBeCalled();
       expect(searchActionMock).toBeCalledWith(value);
     });

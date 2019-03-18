@@ -5,7 +5,9 @@ import SearchDestination from '../index';
 describe('search-destination/', () => {
   describe('#render', () => {
     it('renders correctly with provided props', () => {
-      const tree = renderer.create(<SearchDestination handleChange={jest.fn} />);
+      const tree = renderer.create(
+        <SearchDestination handleChange={jest.fn} />
+      );
       expect(tree.toJSON()).toMatchSnapshot();
     });
   });

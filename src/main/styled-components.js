@@ -65,7 +65,7 @@ export const Content = styled.section`
 `;
 
 export const Placeholder = styled.div`
-  border: .5rem dashed red;
+  border: 0.5rem dashed red;
   color: red;
   text-transform: uppercase;
   display: flex;

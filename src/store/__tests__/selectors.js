@@ -6,24 +6,24 @@ const state = {
     list: [
       { id: 0, name: 'destination 1', currencies: [0, 1] },
       { id: 1, name: 'destination 2', currencies: [2] },
-      { id: 2, name: 'destination 3', currencies: [0, 1, 2] },
+      { id: 2, name: 'destination 3', currencies: [0, 1, 2] }
     ],
-    search: 'abc',
+    search: 'abc'
   },
   payment: {
     loading: true,
     list: [
       { id: 0, name: 'payment 1' },
       { id: 1, name: 'payment 2' },
-      { id: 2, name: 'payment 3' },
+      { id: 2, name: 'payment 3' }
     ],
-    found: [1, 2],
+    found: [1, 2]
   },
   order: {
     destination: 1,
     payment: 2,
-    departing: true,
-  },
+    departing: true
+  }
 };
 
 describe('store/selectors', () => {
@@ -36,7 +36,7 @@ describe('store/selectors', () => {
     it('returns null if no destination was selected', () => {
       const currencies = selectors.getAvailableCurrencies({
         ...state,
-        order: {},
+        order: {}
       });
       expect(currencies).toEqual(null);
     });
@@ -54,7 +54,7 @@ describe('store/selectors', () => {
       const order = selectors.getOrder(state);
       expect(order).toEqual({
         destination: { id: 1, name: 'destination 2', currencies: [2] },
-        payment: { id: 2, name: 'payment 3' },
+        payment: { id: 2, name: 'payment 3' }
       });
     });
   });
@@ -72,7 +72,7 @@ describe('store/selectors', () => {
       expect(destinations).toEqual([
         { id: 0, name: 'destination 1', currencies: [0, 1] },
         { id: 1, name: 'destination 2', currencies: [2] },
-        { id: 2, name: 'destination 3', currencies: [0, 1, 2] },
+        { id: 2, name: 'destination 3', currencies: [0, 1, 2] }
       ]);
     });
   });
@@ -87,7 +87,11 @@ describe('store/selectors', () => {
   describe('getSelectedDestination', () => {
     it('returns the selected destination for the trip', () => {
       const destination = selectors.getSelectedDestination(state);
-      expect(destination).toEqual({ id: 1, name: 'destination 2', currencies: [2] });
+      expect(destination).toEqual({
+        id: 1,
+        name: 'destination 2',
+        currencies: [2]
+      });
     });
   });
 
@@ -101,7 +105,11 @@ describe('store/selectors', () => {
   describe('getDestinationById', () => {
     it('returns the destination by its id', () => {
       const word = selectors.getDestinationById(state, 0);
-      expect(word).toEqual({ id: 0, name: 'destination 1', currencies: [0, 1] });
+      expect(word).toEqual({
+        id: 0,
+        name: 'destination 1',
+        currencies: [0, 1]
+      });
     });
     it('returns null when destination id is null', () => {
       const word = selectors.getDestinationById(state);

@@ -1,12 +1,12 @@
 export const FIND_PAYMENT = {
   REQUEST: 'payment/FIND/REQUEST',
   SUCCESS: 'payment/FIND/SUCCESS',
-  FAILURE: 'payment/FIND/FAILURE',
+  FAILURE: 'payment/FIND/FAILURE'
 };
 
 export const FIND_DESTINATION = {
   SUCCESS: 'destination/FIND/SUCCESS',
-  FAILURE: 'destination/FIND/FAILURE',
+  FAILURE: 'destination/FIND/FAILURE'
 };
 
 export const SET_SEARCH = 'destination/SET_SEARCH';
@@ -18,32 +18,32 @@ export const SUBMIT = 'order/SUBMIT';
 export function setPayment(paymentId) {
   return {
     type: SET_PAYMENT,
-    paymentId,
+    paymentId
   };
 }
 
 export function startTrip() {
   return {
-    type: SUBMIT,
+    type: SUBMIT
   };
 }
 
 export function setSearch(searchCriteria) {
   return {
     type: SET_SEARCH,
-    searchCriteria,
+    searchCriteria
   };
 }
 
 export function setDestination(destinationId) {
   return {
     type: SET_DESTINATION,
-    destinationId,
+    destinationId
   };
 }
 
 export function resetDestination() {
   return {
-    type: RESET_DESTINATION,
+    type: RESET_DESTINATION
   };
 }

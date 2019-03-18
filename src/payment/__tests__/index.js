@@ -30,10 +30,7 @@ describe('payment/', () => {
 
     it('renders correctly with no currency available', () => {
       const tree = renderer.create(
-        <SelectPayment
-          currencies={[]}
-          actions={{}}
-        />
+        <SelectPayment currencies={[]} actions={{}} />
       );
       expect(tree.toJSON()).toMatchSnapshot();
     });

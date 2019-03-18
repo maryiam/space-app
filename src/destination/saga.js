@@ -8,12 +8,12 @@ export function* findDestinations({ searchCriteria }) {
     const list = yield call(destinationService.find, searchCriteria);
     yield put({
       type: actions.FIND_DESTINATION.SUCCESS,
-      list,
+      list
     });
   } catch (e) {
     yield put({
       type: actions.FIND_DESTINATION.FAILURE,
-      error: e.message,
+      error: e.message
     });
   }
 }

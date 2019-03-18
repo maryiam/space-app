@@ -18,7 +18,7 @@ describe('payment saga', () => {
       selectors.getDestinationById.mockImplementation(() => ({
         name: 'Yavin IV',
         id: 1,
-        currencies: [1, 2],
+        currencies: [1, 2]
       }));
 
       const dispatched = await recordSaga(onDestinationSet, initialAction);
@@ -26,12 +26,15 @@ describe('payment saga', () => {
       expect(selectors.getDestinationById).toHaveBeenCalled();
       expect(dispatched).toContainEqual({
         type: actions.FIND_PAYMENT.REQUEST,
-        currencies: [1, 2],
+        currencies: [1, 2]
       });
     });
 
     describe('findPayment', () => {
-      const list = [{ id: 0, name: 'Imperial Credit' }, { id: 1, name: 'Republic Credit' }];
+      const list = [
+        { id: 0, name: 'Imperial Credit' },
+        { id: 1, name: 'Republic Credit' }
+      ];
       const initialAction = { currencies: [0, 1] };
 
       paymentService.find = jest.fn();
@@ -45,22 +48,28 @@ describe('payment saga', () => {
 
         const dispatched = await recordSaga(findPayment, initialAction);
 
-        expect(paymentService.find).toHaveBeenCalledWith(initialAction.currencies);
+        expect(paymentService.find).toHaveBeenCalledWith(
+          initialAction.currencies
+        );
         expect(dispatched).toContainEqual({
           type: actions.FIND_PAYMENT.SUCCESS,
-          list,
+          list
         });
       });
 
       it('should fails when error and call fin payment failure action', async () => {
-        paymentService.find.mockImplementation(() => Promise.reject({ message: 'error' }));
+        paymentService.find.mockImplementation(() =>
+          Promise.reject({ message: 'error' })
+        );
 
         const dispatched = await recordSaga(findPayment, initialAction);
 
-        expect(paymentService.find).toHaveBeenCalledWith(initialAction.currencies);
+        expect(paymentService.find).toHaveBeenCalledWith(
+          initialAction.currencies
+        );
         expect(dispatched).toContainEqual({
           type: actions.FIND_PAYMENT.FAILURE,
-          error: 'error',
+          error: 'error'
         });
       });
 

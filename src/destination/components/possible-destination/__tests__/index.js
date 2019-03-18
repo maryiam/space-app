@@ -16,7 +16,7 @@ describe('possible-destination/', () => {
           destination={{
             id: 10,
             thumb: '/assets/planets/thumb/yavin4@x2.png',
-            name: 'destination 1',
+            name: 'destination 1'
           }}
         />
       );
@@ -33,7 +33,7 @@ describe('possible-destination/', () => {
           destination={{
             id: 10,
             thumb: '/assets/planets/thumb/yavin4@x2.png',
-            name: 'destination 1',
+            name: 'destination 1'
           }}
         />
       );

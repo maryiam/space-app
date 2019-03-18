@@ -23,7 +23,7 @@ export function isPaymentLoading(state) {
 export function getOrder(state) {
   return {
     destination: getDestinationById(state, state.order.destination),
-    payment: getCurrencyById(state.order.payment, state),
+    payment: getCurrencyById(state.order.payment, state)
   };
 }
 

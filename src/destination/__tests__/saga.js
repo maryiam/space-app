@@ -18,22 +18,28 @@ describe('destination saga', () => {
 
     const dispatched = await recordSaga(findDestinations, initialAction);
 
-    expect(destinationService.find).toHaveBeenCalledWith(initialAction.searchCriteria);
+    expect(destinationService.find).toHaveBeenCalledWith(
+      initialAction.searchCriteria
+    );
     expect(dispatched).toContainEqual({
       type: actions.FIND_DESTINATION.SUCCESS,
-      list,
+      list
     });
   });
 
   it('should fails when error and call fin destination failure action', async () => {
-    destinationService.find.mockImplementation(() => Promise.reject({ message: 'error' }));
+    destinationService.find.mockImplementation(() =>
+      Promise.reject({ message: 'error' })
+    );
 
     const dispatched = await recordSaga(findDestinations, initialAction);
 
-    expect(destinationService.find).toHaveBeenCalledWith(initialAction.searchCriteria);
+    expect(destinationService.find).toHaveBeenCalledWith(
+      initialAction.searchCriteria
+    );
     expect(dispatched).toContainEqual({
       type: actions.FIND_DESTINATION.FAILURE,
-      error: 'error',
+      error: 'error'
     });
   });
 });
